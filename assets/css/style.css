@@ -9,10 +9,6 @@ a, .nav-bar, .active, .nav-link{
 nav img{
     width: 100px;
 }
-header img{
-    max-width: 100%;
-    max-height: 100%;
-}
 .ml-auto{
     margin-left: auto !important;
 }
@@ -31,4 +27,19 @@ header img{
 }
 .top-hr{
    background-color:  rgb(0, 225, 255);
+}
+#section2{
+    margin-top: 80px;
+}
+.card-text{
+    color: black;
+}
+#contacto{
+    background-color: white;
+}
+#contacto h3, h5{
+    color: black;
+}
+#contacto h5{
+    text-align: right;
 }
