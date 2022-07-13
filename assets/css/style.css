@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     padding: 0;
@@ -90,5 +93,19 @@ main {
         text-align: center;
         padding-top: 10px;
         height: 50px;
+    }
+    #footer h3 {
+        font-size: 30px;
+        margin-top: 5px;
+        margin-left: 20px;
+    }
+
+    .iconos {
+        font-size: 30px;
+    }
+
+    .iconos i {
+        padding-left: 30px;
+        padding-top: 10px;
     }
 }
