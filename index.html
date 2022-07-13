@@ -20,7 +20,11 @@
     <script src="https://kit.fontawesome.com/8ab20f584f.js" crossorigin="anonymous"></script>
     <!--ARCHIVO JS-->
     <script src="./assets/js/script.js"></script>
-    <title>Prueba</title>
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;900&display=swap" rel="stylesheet">
+    <title>Viajes Chile</title>
 </head>
 
 <body>
@@ -68,12 +72,12 @@
                     <img src="./assets/img/carousel3.jpg" class="d-block w-100" alt="...">
                 </div>
             </div>
-            <button class="carousel-control-prev d-none" type="button" data-bs-target="#carouselExampleControls"
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next d-none" type="button" data-bs-target="#carouselExampleControls"
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
@@ -87,9 +91,9 @@
         <section id="section1">
             <div class="container section1 d-none d-sm-block py-5">
                 <h2 class="text-center">¿Quienes Somos?</h2>
-                <div class="row">
+                <div class="row py-5">
                     <hr>
-                    <div class="col tarjeta1">
+                    <div class="col tarjeta1 py-3">
                         <div class="tittle">
                             <i class="fa-solid fa-plane fa-2x"></i>
                         </div>
@@ -104,7 +108,7 @@
                             minus necessitatibus asperiores omnis alias, possimus at minima facere molestiae eaque
                             assumenda quae aliquid dolore explicabo!</p>
                     </div>
-                    <div class="col tarjeta2">
+                    <div class="col tarjeta2 py-3">
                         <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, exercitationem
                             autem
                             provident ea impedit nobis velit asperiores doloremque facere consequatur quae. Eum, ut!
@@ -119,7 +123,7 @@
                             <i class="fa-solid fa-mountain fa-2x"></i>
                         </div>
                     </div>
-                    <div class="col tarjeta3">
+                    <div class="col tarjeta3 py-3">
                         <div class="tittle text-center">
                             <i class="fa-solid fa-route fa-2x"></i>
                         </div>
@@ -137,54 +141,55 @@
                 </div>
             </div>
         </section>
-        <!--Seccion Tooltips en las imagenes-->
-        <section id="section2">
+        <!--Seccion Destacados Y Tooltips en las imagenes-->
+        <section id="section2" class="py-5">
             <div class="container py-5">
                 <div>
                     <h2 class="text-center">Destacados</h2>
                 </div>
-                <div class="row ">
+                <div class="row py-5">
                     <hr>
-                    <div class="col-12 col-sm-3 py-3">
+                    <div class="col-12 col-sm-3 py-5">
                         <div class="card h-100">
                             <!--Tooltip-->
                             <img src="./assets/img/card1.jpg" class="card-img-top altura" data-toggle="tooltip"
                                 alt="alternative text" title="Paisaje Austral" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h5>
+                                <h5 class="card-title">saepe corporis dolores optio.</h5>
                                 <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
                                     aspernatur nemo provident nostrum, saepe corporis dolores optio asperiores.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-3 py-3">
+                    <div class="col-12 col-sm-3 py-5">
                         <div class="card h-100">
                             <img src="./assets/img/card2.jpg" class="card-img-top altura" data-toggle="tooltip"
                                 alt="alternative text" title="Lago Escondido" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">orem ipsum dolor, sit amet consectetur adipisicing elit.</h5>
+                                <h5 class="card-title">sit, amet consectetur</h5>
                                 <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
                                     aspernatur nemo provident nostrum, saepe corporis dolores optio asperiores.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-3 py-3">
+                    <div class="col-12 col-sm-3 py-5">
                         <div class="card h-100">
                             <img src="./assets/img/card3.jpg" class="card-img-top altura" data-toggle="tooltip"
                                 alt="alternative text" title="Rios" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h5>
-                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
+                                <h5 class="card-title">consectetur adipisicing elit.</h5>
+                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit Deleniti
                                     aspernatur nemo provident nostrum, saepe corporis dolores optio asperiores.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-3 py-3">
+                    <div class="col-12 col-sm-3 py-5">
                         <div class="card h-100">
-                            <img src="./assets/img/card4.jpg" class="card-img-top altura" data-toggle="tooltip"
+                            <a href="#" data-toggle="popover" data-img="http://placehold.it/400x200"
+                            title="Popover Header"><img src="./assets/img/card4.jpg" class="card-img-top altura" data-toggle="tooltip"
                                 alt="alternative text" title="Bosques Encantados" alt="..."></a>
                             <div class="card-body">
-                                <h5 class="card-title">orem ipsum dolor, sit amet consectetur adipisicing elit.</h5>
+                                <h5 class="card-title">lorem ipsum dolor, sit amet consectetur</h5>
                                 <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
                                     aspernatur nemo provident nostrum, saepe corporis dolores optio asperiores.</p>
                             </div>
@@ -194,13 +199,17 @@
             </div>
         </section>
         <!--Termina seccion imagenes-->
+        <div class="container">
+            <a href="#" data-toggle="popover" data-img="http://placehold.it/400x200" title="Popover Header">Toggle
+                popover</a>
+        </div>
         <!--Contacto-->
-        <section id="contacto">
+        <section id="contacto" class="py-5">
             <div class="container">
                 <div>
                     <h3 class="text-center">Contacto</h3>
                 </div>
-                <div class="row">
+                <div class="row py-3">
                     <hr>
                     <div data-tf-widget="sEaI73i1" data-tf-iframe-props="title=Mi typeform" data-tf-medium="snippet"
                         style="width:100%;height:400px;"></div>
@@ -218,7 +227,8 @@
                     <h3>Viajes Chile</h3>
                 </div>
                 <div class="iconos text-center display-3 col">
-                    <i class="fa-brands fa-github"></i>
+                    <a href="https://github.com"><i class="fa-brands fa-github" data-toggle="tooltip"
+                            alt="alternative text" title="Bosques Encantados"></i></a>
                     <i class="fa-brands fa-linkedin"></i>
                     <i class="fa-brands fa-twitter"></i>
                     <i class="fa-brands fa-facebook"></i>
