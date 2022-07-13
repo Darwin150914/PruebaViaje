@@ -1,54 +1,94 @@
-body{
+body {
     margin: 0;
     padding: 0;
+    background-color: black;
 }
-nav{
+
+nav {
     max-width: 100%;
 }
-.ml-auto{
+
+.ml-auto {
     margin-left: auto !important;
 }
-a, .nav-bar, .active, .nav-link, .parrafo{
+
+a,
+.nav-bar,
+.active,
+.nav-link,
+.parrafo {
     color: white !important;
 }
 
-main{
+main {
     color: white !important;
     background-color: black !important;
 }
-p {
-    color: black;
-}
 
-.card{
+.card {
     background-color: rgb(3, 172, 172);
 }
+
+.altura {
+    height: 150px;
+}
+
+#footer {
+    margin-top: 40px;
+    color: white;
+    background-color: rgb(3, 172, 172);
+}
+
 /*BREAKPOINT*/
 /*PANTALLA CHICA*/
 @media (max-width: 575.98px) {
-    .ocultar{
+    .ocultar {
         display: none;
     }
+
     nav img {
         width: 50px;
     }
+
+    #footer h3 {
+        font-size: 20px;
+        margin-top: 5px;
+        margin-left: 20px;
+    }
+
+    .iconos {
+        font-size: 20px;
+    }
+
+    .iconos i {
+        padding-top: 10px;
+    }
 }
+
 /*PANTALLA GRANDE*/
 @media (min-width: 576px) {
     nav img {
         margin-left: 100px;
         width: 80px;
     }
-    header h1{
+
+    header h1 {
         margin-top: 10px;
         margin-left: 10px;
         font-size: 20px;
     }
-    hr{
+
+    hr {
         border: 1px solid aqua;
     }
-    .tittle{
+
+    .tittle {
         background-color: aqua;
     }
-    
+
+    #section1 .tittle {
+        text-align: center;
+        padding-top: 10px;
+        height: 50px;
+    }
 }
