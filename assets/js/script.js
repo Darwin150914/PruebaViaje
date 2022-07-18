@@ -1,15 +1,16 @@
+$(() => {
+  /*TooTipl*/
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();   
   });
 
-  $(document).ready(function(){
-    $('[data-toggle="popover"]').popover({
-           //trigger: 'focus',
-       trigger: 'hover',
-           html: true,
-           content: function () {
-         return '<img class="img-fluid" src="'+$(this).data('img') + '" />';
-           },
-           title: 'Bosques'
-     }) 
- });
+/*Popover*/
+  const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+  const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
+
+/*Carousel*/
+
+  $('#carouselExampleControls').carousel({
+    interval: 2000
+});
+}) 
